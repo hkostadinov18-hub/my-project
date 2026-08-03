@@ -1,11 +1,24 @@
+import Image from "next/image";
 import type { Product } from "@/data/products";
 
 export default function ProductCard({ product }: { product: Product }) {
   return (
     <div className="flex flex-col overflow-hidden rounded-2xl border border-amber-200 bg-white shadow-sm transition-shadow hover:shadow-md">
-      <div className="flex h-32 items-center justify-center bg-gradient-to-br from-amber-100 to-orange-100 text-5xl">
-        {product.emoji}
-      </div>
+      {product.image ? (
+        <div className="relative h-32 w-full">
+          <Image
+            src={product.image}
+            alt={product.name}
+            fill
+            sizes="(max-width: 640px) 100vw, 25vw"
+            className="object-cover"
+          />
+        </div>
+      ) : (
+        <div className="flex h-32 items-center justify-center bg-gradient-to-br from-amber-100 to-orange-100 text-5xl">
+          {product.emoji}
+        </div>
+      )}
       <div className="flex flex-1 flex-col gap-2 p-5">
         <span className="text-xs font-semibold uppercase tracking-wide text-amber-600">
           {product.category}

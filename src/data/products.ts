@@ -1,4 +1,5 @@
 export type ProductCategory =
+  | "Соленки"
   | "Баници"
   | "Кроасани"
   | "Сандвичи"
@@ -15,10 +16,12 @@ export interface Product {
   wholesaleMinQty: number;
   unit: string;
   emoji: string;
+  image?: string;
   featured?: boolean;
 }
 
 export const categories: ProductCategory[] = [
+  "Соленки",
   "Баници",
   "Кроасани",
   "Сандвичи",
@@ -27,6 +30,19 @@ export const categories: ProductCategory[] = [
 ];
 
 export const products: Product[] = [
+  {
+    id: "solenka-sirene-kashkaval",
+    name: "Соленка със сирене и кашкавал",
+    category: "Соленки",
+    description: "Нашият най-разпознаваем и най-продаван продукт — мека солена закуска с домашно сирене вътре и разтопен кашкавал отгоре.",
+    retailPrice: 0.2,
+    wholesalePrice: 0.15,
+    wholesaleMinQty: 30,
+    unit: "бр.",
+    emoji: "🧀",
+    image: "/products/solenka.jpg",
+    featured: true,
+  },
   {
     id: "banitsa-sirene",
     name: "Баница със сирене",
@@ -139,7 +155,6 @@ export const products: Product[] = [
     wholesaleMinQty: 30,
     unit: "бр.",
     emoji: "🥯",
-    featured: true,
   },
   {
     id: "hlyab-selski",
