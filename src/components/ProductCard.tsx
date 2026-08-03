@@ -29,13 +29,13 @@ export default function ProductCard({ product }: { product: Product }) {
           <div>
             <p className="text-xs text-amber-900/60">На дребно</p>
             <p className="text-lg font-bold text-amber-800">
-              {product.retailPrice.toFixed(2)} лв. / {product.unit}
+              {product.retailPrice.toFixed(2)} € / {product.unit}
             </p>
           </div>
           <div className="text-right">
             <p className="text-xs text-amber-900/60">На едро от {product.wholesaleMinQty} бр.</p>
             <p className="text-sm font-semibold text-orange-700">
-              {product.wholesalePrice.toFixed(2)} лв. / {product.unit}
+              {product.wholesalePrice.toFixed(2)} € / {product.unit}
             </p>
           </div>
         </div>
