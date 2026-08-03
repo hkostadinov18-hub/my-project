@@ -55,6 +55,7 @@ export const products: Product[] = [
     wholesaleMinQty: 30,
     unit: "бр.",
     emoji: "🌭",
+    image: "/products/krenvirshka.jpg",
   },
   {
     id: "pastarmalak",
