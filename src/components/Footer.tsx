@@ -1,10 +1,18 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer className="border-t border-amber-200 bg-amber-900 text-amber-100">
       <div className="mx-auto grid max-w-6xl gap-8 px-6 py-12 sm:grid-cols-3">
         <div>
-          <div className="flex items-center gap-2">
-            <span className="text-2xl">🥐</span>
+          <div className="flex items-center gap-3">
+            <Image
+              src="/logo.png"
+              alt="Пекарна Делиция"
+              width={40}
+              height={40}
+              className="rounded-full"
+            />
             <span className="font-serif text-lg font-bold">Пекарна Делиция</span>
           </div>
           <p className="mt-3 text-sm text-amber-200/80">

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const navLinks = [
@@ -11,8 +12,15 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-amber-200 bg-amber-50/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href="/" className="flex items-center gap-2">
-          <span className="text-2xl">🥐</span>
+        <Link href="/" className="flex items-center gap-3">
+          <Image
+            src="/logo.png"
+            alt="Пекарна Делиция"
+            width={44}
+            height={44}
+            className="rounded-full"
+            priority
+          />
           <span className="font-serif text-xl font-bold tracking-tight text-amber-900">
             Пекарна Делиция
           </span>
