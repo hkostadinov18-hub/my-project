@@ -25,8 +25,8 @@ export default function Footer() {
           </h3>
           <ul className="mt-3 space-y-2 text-sm text-amber-200/80">
             <li>
-              <a href="tel:+359888000000" className="hover:text-amber-50">
-                +359 888 000 000
+              <a href="tel:+359895022742" className="hover:text-amber-50">
+                +359 89 5022742
               </a>
             </li>
             <li>

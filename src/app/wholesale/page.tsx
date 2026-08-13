@@ -78,10 +78,10 @@ export default function WholesalePage() {
         </p>
         <div className="flex flex-col gap-4 sm:flex-row">
           <a
-            href="tel:+359888000000"
+            href="tel:+359895022742"
             className="rounded-full bg-amber-700 px-6 py-3 text-sm font-semibold text-amber-50 transition-colors hover:bg-amber-800"
           >
-            Обадете се: +359 888 000 000
+            Обадете се: +359 89 5022742
           </a>
           <a
             href="mailto:poruchki@pekarna-delicia.bg?subject=Запитване за поръчка на едро"

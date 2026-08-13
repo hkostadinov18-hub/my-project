@@ -8,9 +8,8 @@ export const metadata: Metadata = {
 
 const info = [
   { icon: "📍", label: "Адрес", value: "ул. „Розова долина“ 12, София" },
-  { icon: "📞", label: "Телефон", value: "+359 888 000 000" },
-  { icon: "✉️", label: "Имейл", value: "poruchki@pekarna-delicia.bg" },
   { icon: "📞", label: "Телефон", value: "+359 89 5022742" },
+  { icon: "✉️", label: "Имейл", value: "poruchki@pekarna-delicia.bg" },
 ];
 
 const hours = [
