@@ -10,6 +10,7 @@ const info = [
   { icon: "📍", label: "Адрес", value: "ул. „Розова долина“ 12, София" },
   { icon: "📞", label: "Телефон", value: "+359 888 000 000" },
   { icon: "✉️", label: "Имейл", value: "poruchki@pekarna-delicia.bg" },
+  { icon: "📞", label: "Телефон", value: "+359 89 5022742" },
 ];
 
 const hours = [
@@ -34,7 +35,7 @@ export default function ContactsPage() {
             <h2 className="font-serif text-xl font-bold text-amber-950">Информация за контакт</h2>
             <ul className="mt-4 space-y-3">
               {info.map((item) => (
-                <li key={item.label} className="flex items-center gap-3 text-amber-900/80">
+                <li key={item.value} className="flex items-center gap-3 text-amber-900/80">
                   <span className="text-xl">{item.icon}</span>
                   <span>
                     <span className="font-semibold text-amber-950">{item.label}: </span>
